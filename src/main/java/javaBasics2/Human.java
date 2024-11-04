@@ -1,5 +1,7 @@
 package javaBasics2;
 
+import java.util.List;
+
 public class Human {
     private final String name;
     private final int age;
@@ -29,6 +31,19 @@ public class Human {
 
     public boolean isCute() {
         return isCute;
+    }
+
+    void printSomeValues(int i, String str, List<String> list) {
+        i = 100;
+//        list.add("Kingdom Come");
+        System.out.println(
+                "int: " +
+                i +
+                ", String: " +
+                str.toUpperCase() +
+                ", List: " +
+                list
+        );
     }
 
     @Override
